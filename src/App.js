@@ -64,7 +64,7 @@ class App extends Component {
         <img src={rayen} alt="" width="100%" height="80%"/></div>
           <br/>
           <p className="lead text-center">Buscador de Imagenes para Rayen SALUD</p>
-
+          <p className="lead text-center"><a href="https://seiler18.github.io/Curriculo/" rel="noopener noreferrer" target="_blank">Curriculo Jesus Seiler</a></p>
           <Buscador datosBusqueda={this.datosBusqueda} />
         </div>
         <div className="row justify-content-center">
