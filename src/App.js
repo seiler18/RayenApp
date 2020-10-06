@@ -2,40 +2,62 @@ import React, { Component } from "react";
 import Buscador from "./componentes/Buscador";
 import Resultado from "./componentes/Resultado";
 import rayen from "./componentes/rayen.png";
+import FooterPage from "./componentes/Footer";
 class App extends Component {
   state = {
-    termino: "",
+    termino : '',
     imagenes: [],
-    pagina: "",
-  };
+    pagina : ''
+  }
 
+
+  scroll = () => {
+
+    const elemento = document.querySelector('.jumbotron');
+    elemento.scrollIntoView('smooth','start');
+  }
   paginaAnterior = () => {
     //leer el state pagina actual
-    //restar a la pagina actual 1
+   
+    let pagina = this.state.pagina
+
+    //leer si es una pagina es 1
+    if(pagina===1)return null;
+    //sumar a la pagina actual 1
+    pagina -=1
+  
     //agregar el cambio al state
+  this.setState({
+    pagina
+  },()=> {
+    this.consultarApi();
+    this.scroll();
+  });
+ /*  console.log(pagina); */
   };
 
   paginaSiguiente = () => {
     //leer el state pagina actual
-    let pagina = this.state.pagina;
-
+   
+    let pagina = this.state.pagina
     //sumar a la pagina actual 1
-
-    pagina += 1;
+    pagina +=1
+  
     //agregar el cambio al state
-    this.setState({ 
-      pagina 
-    
-    });
+  this.setState({
+    pagina
+  },()=> {
+    this.consultarApi();
+    this.scroll();
+  });
 
-    console.log(pagina);
+    /* console.log(pagina); */
   };
 
   consultarApi = () => {
     const termino = this.state.termino;
-//me falto terminar la paginacion
-   /* const pagina = this.state.pagina; */
-    const url = `https://pixabay.com/api/?key=18561824-4de1bb5b34eaa58405117f4f4&q=${termino}`;
+    const pagina = this.state.pagina;
+    const url = `https://pixabay.com/api/?key=18561824-4de1bb5b34eaa58405117f4f4&q=${termino}&per_page=30&page=${pagina}`;
 
     //console.log(url);
 
@@ -48,7 +70,7 @@ class App extends Component {
     this.setState(
       {
         termino: termino,
-        pagina: 1,
+        pagina: 1
       },
       () => {
         this.consultarApi();
@@ -58,7 +80,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container justify-content-center">
         <div className="jumbotron">
           <div className="container row justify-content-center">
         <img src={rayen} alt="" width="100%" height="80%"/></div>
@@ -70,13 +92,21 @@ class App extends Component {
         <div className="row justify-content-center">
           <Resultado
             imagenes={this.state.imagenes}
-            paginaAnterior={this.props.paginaAnterior}
-            paginaSiguiente={this.props.paginaSiguiente}
+            paginaAnterior={this.paginaAnterior}
+            paginaSiguiente={this.paginaSiguiente}
+           
           />
+          
         </div>
+        <FooterPage/>
       </div>
+     
+      
     );
+
+    
   }
+  
 }
 
 export default App;
