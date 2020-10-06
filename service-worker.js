@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/RayenApp/precache-manifest.ea3e07ae77997f3abae9aaa17853811d.js"
+  "/RayenApp/precache-manifest.35f0a4aa2355020c18ccbd55e4ecde72.js"
 );
 
 workbox.clientsClaim();

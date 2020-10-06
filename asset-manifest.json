@@ -1,13 +1,13 @@
 {
   "main.css": "/RayenApp/static/css/main.3298fdc9.chunk.css",
-  "main.js": "/RayenApp/static/js/main.bf90f4b5.chunk.js",
-  "main.js.map": "/RayenApp/static/js/main.bf90f4b5.chunk.js.map",
+  "main.js": "/RayenApp/static/js/main.524e20a8.chunk.js",
+  "main.js.map": "/RayenApp/static/js/main.524e20a8.chunk.js.map",
   "runtime~main.js": "/RayenApp/static/js/runtime~main.471c5c4b.js",
   "runtime~main.js.map": "/RayenApp/static/js/runtime~main.471c5c4b.js.map",
-  "static/js/2.f110dc6e.chunk.js": "/RayenApp/static/js/2.f110dc6e.chunk.js",
-  "static/js/2.f110dc6e.chunk.js.map": "/RayenApp/static/js/2.f110dc6e.chunk.js.map",
+  "static/js/2.be7565aa.chunk.js": "/RayenApp/static/js/2.be7565aa.chunk.js",
+  "static/js/2.be7565aa.chunk.js.map": "/RayenApp/static/js/2.be7565aa.chunk.js.map",
   "index.html": "/RayenApp/index.html",
-  "precache-manifest.ea3e07ae77997f3abae9aaa17853811d.js": "/RayenApp/precache-manifest.ea3e07ae77997f3abae9aaa17853811d.js",
+  "precache-manifest.35f0a4aa2355020c18ccbd55e4ecde72.js": "/RayenApp/precache-manifest.35f0a4aa2355020c18ccbd55e4ecde72.js",
   "service-worker.js": "/RayenApp/service-worker.js",
   "static/css/main.3298fdc9.chunk.css.map": "/RayenApp/static/css/main.3298fdc9.chunk.css.map"
 }
