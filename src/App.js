@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Buscador from "./componentes/Buscador";
 import Resultado from "./componentes/Resultado";
-import rayen from "./componentes/rayen.png";
+import rayen from "./componentes/FirmaCurriculo.png";
 import FooterPage from "./componentes/Footer";
 class App extends Component {
   state = {
@@ -85,7 +85,7 @@ class App extends Component {
           <div className="container row justify-content-center">
         <img src={rayen} alt="" width="100%" height="80%"/></div>
           <br/>
-          <p className="lead text-center">Buscador de Imagenes para Rayen SALUD</p>
+          <p className="lead text-center">Buscador de Imagenes </p>
           <p className="lead text-center"><a href="https://seiler18.github.io/Curriculo/" rel="noopener noreferrer" target="_blank">Curriculo Jesus Seiler</a></p>
           <Buscador datosBusqueda={this.datosBusqueda} />
         </div>
