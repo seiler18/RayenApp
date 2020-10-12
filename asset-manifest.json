@@ -1,13 +1,14 @@
 {
   "main.css": "/RayenApp/static/css/main.3298fdc9.chunk.css",
-  "main.js": "/RayenApp/static/js/main.524e20a8.chunk.js",
-  "main.js.map": "/RayenApp/static/js/main.524e20a8.chunk.js.map",
+  "main.js": "/RayenApp/static/js/main.8fb31aec.chunk.js",
+  "main.js.map": "/RayenApp/static/js/main.8fb31aec.chunk.js.map",
   "runtime~main.js": "/RayenApp/static/js/runtime~main.471c5c4b.js",
   "runtime~main.js.map": "/RayenApp/static/js/runtime~main.471c5c4b.js.map",
   "static/js/2.be7565aa.chunk.js": "/RayenApp/static/js/2.be7565aa.chunk.js",
   "static/js/2.be7565aa.chunk.js.map": "/RayenApp/static/js/2.be7565aa.chunk.js.map",
   "index.html": "/RayenApp/index.html",
-  "precache-manifest.35f0a4aa2355020c18ccbd55e4ecde72.js": "/RayenApp/precache-manifest.35f0a4aa2355020c18ccbd55e4ecde72.js",
+  "precache-manifest.24acc577fd88167ed44d30a4ef5471bb.js": "/RayenApp/precache-manifest.24acc577fd88167ed44d30a4ef5471bb.js",
   "service-worker.js": "/RayenApp/service-worker.js",
-  "static/css/main.3298fdc9.chunk.css.map": "/RayenApp/static/css/main.3298fdc9.chunk.css.map"
+  "static/css/main.3298fdc9.chunk.css.map": "/RayenApp/static/css/main.3298fdc9.chunk.css.map",
+  "static/media/FirmaCurriculo.png": "/RayenApp/static/media/FirmaCurriculo.12ff6e2b.png"
 }

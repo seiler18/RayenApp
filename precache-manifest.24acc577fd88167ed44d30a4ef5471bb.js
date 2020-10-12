@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2c0358d4cb7030d48e98",
+    "revision": "3385209fd526a038f150",
     "url": "/RayenApp/static/css/main.3298fdc9.chunk.css"
   },
   {
-    "revision": "2c0358d4cb7030d48e98",
-    "url": "/RayenApp/static/js/main.524e20a8.chunk.js"
+    "revision": "3385209fd526a038f150",
+    "url": "/RayenApp/static/js/main.8fb31aec.chunk.js"
   },
   {
     "revision": "83c50c1397a8a35e5978",
@@ -16,7 +16,11 @@ self.__precacheManifest = [
     "url": "/RayenApp/static/js/2.be7565aa.chunk.js"
   },
   {
-    "revision": "e57c049960b60198f39ff068c970fb98",
+    "revision": "12ff6e2b3b967f12246d73c3a8a6e6b4",
+    "url": "/RayenApp/static/media/FirmaCurriculo.12ff6e2b.png"
+  },
+  {
+    "revision": "86b620df432a74ad29cccf2ee9e83319",
     "url": "/RayenApp/index.html"
   }
 ];
