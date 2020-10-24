@@ -3,11 +3,14 @@ import Buscador from "./componentes/Buscador";
 import Resultado from "./componentes/Resultado";
 import rayen from "./componentes/FirmaCurriculo.png";
 import FooterPage from "./componentes/Footer";
+
 class App extends Component {
   state = {
     termino : '',
     imagenes: [],
     pagina : ''
+
+    
   }
 
 
@@ -66,6 +69,10 @@ class App extends Component {
       .then((resultado) => this.setState({ imagenes: resultado.hits }));
   };
 
+  btnClick() {
+    window.open("https://seiler18.github.io/Curriculo/");
+    
+}
   datosBusqueda = (termino) => {
     this.setState(
       {
@@ -76,17 +83,23 @@ class App extends Component {
         this.consultarApi();
       }
     );
+    
   };
 
   render() {
     return (
+      
       <div className="container justify-content-center">
         <div className="jumbotron">
           <div className="container row justify-content-center">
         <img src={rayen} alt="" width="100%" height="80%"/></div>
           <br/>
           <p className="lead text-center">Buscador de Imagenes </p>
-          <p className="lead text-center"><a href="https://seiler18.github.io/Curriculo/" rel="noopener noreferrer" target="_blank">Curriculo Jesus Seiler</a></p>
+          
+          <div className="form-group ">{/* col-md-4 container justify-content-center */}
+         
+          <button className="btn btn-lg btn-success btn-block" onClick={this.btnClick.bind(this)} rel="noopener noreferrer" target="_blank">Abrir Curriculo</button> </div>
+               
           <Buscador datosBusqueda={this.datosBusqueda} />
         </div>
         <div className="row justify-content-center">
